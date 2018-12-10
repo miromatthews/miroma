@@ -62,60 +62,48 @@
 
 <h1 style="color: #0751FA; padding-top: 100px; padding-left: 15%;">Sensor</h1>
 <p style=" padding-left: 13%; padding-right: 13%;">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut bibendum iaculis ante,
- a commodo ligula elementum eu. Mauris placerat lectus vitae ex aliquet tincidunt. Ut bibendum
- gravida dignissim. Ut eu facilisis orci. Etiam gravida porttitor lorem id varius. Duis semper,
- nunc at luctus rutrum, tellus tellus vehicula metus, et commodo metus erat non mi. Cras ultricies diam varius,
-  leo eget, egestas enim. Suspendisse mattis ultrices pretium.
+<img src="images/sensor.jpg" style="width:200px; margin-top:10px;"/>	
+<br>The sensor is a simple set up. It uses a resistor in series with a LDR to create a varying voltage divider to provide an analog reading. The sensor is connected to the XBee router pin IO0 
 </p>
 
 
 <h1 style="color: #0751FA; padding-top: 5px; padding-left: 15%;">Webserver</h1>
 <p style=" padding-left: 13%; padding-right: 13%;">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut bibendum iaculis ante,
- a commodo ligula elementum eu. Mauris placerat lectus vitae ex aliquet tincidunt. Ut bibendum
- gravida dignissim. Ut eu facilisis orci. Etiam gravida porttitor lorem id varius. Duis semper,
- nunc at luctus rutrum, tellus tellus vehicula metus, et commodo metus erat non mi. Cras ultricies diam varius,
-  leo eget, egestas enim. Suspendisse mattis ultrices pretium.
+<img src="images/webServer.jpg" style="width:200px; margin-top:10px;"/>	
+<br>The web server is stored on the arduino. It obtains the IP automatically using DHCP. It displays the sensor data (Lux) transmitted over the network. It uses two control buttons, ON and OFF, to control the Arduino to turn on/off blue LED remotely. It also contains a button to act as a Link to the GitHub hosted website.
 </p>
 
-<h2 style="color: #0751FA; padding-top: 1px; padding-left: 16%;">Time</h2>
+<!-- <h2 style="color: #0751FA; padding-top: 1px; padding-left: 16%;">Time</h2>
 <p style=" padding-left: 14%; padding-right: 13%;">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut bibendum iaculis ante,
  a commodo ligula elementum eu. Mauris placerat lectus vitae ex aliquet tincidunt. Ut bibendum
  gravida dignissim. Ut eu facilisis orci. Etiam gravida porttitor lorem id varius.
-</p>
+</p> -->
 
-<h2 style="color: #0751FA; padding-top: 1px; padding-left: 16%;">Control</h2>
+<!-- <h2 style="color: #0751FA; padding-top: 1px; padding-left: 16%;">Control</h2>
 <p style=" padding-left: 14%; padding-right: 13%;">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut bibendum iaculis ante,
  a commodo ligula elementum eu. Mauris placerat lectus vitae ex aliquet tincidunt. Ut bibendum
  gravida dignissim. Ut eu facilisis orci. Etiam gravida porttitor lorem id varius.
-</p>
+</p> -->
 
-<h2 style="color: #0751FA; padding-top: 1px; padding-left: 16%;">Links</h2>
-<p style=" padding-left: 14%; padding-right: 13%;">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut bibendum iaculis ante,
- a commodo ligula elementum eu. Mauris placerat lectus vitae ex aliquet tincidunt. Ut bibendum
- gravida dignissim. Ut eu facilisis orci. Etiam gravida porttitor lorem id varius.
-</p>
 
 <h1 style="color: #0751FA; padding-top: 5px; padding-left: 15%;">ThingSpeak</h1>
 <p style=" padding-left: 13%; padding-right: 13%;">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut bibendum iaculis ante,
- a commodo ligula elementum eu. Mauris placerat lectus vitae ex aliquet tincidunt. Ut bibendum
- gravida dignissim. Ut eu facilisis orci. Etiam gravida porttitor lorem id varius. Duis semper,
- nunc at luctus rutrum, tellus tellus vehicula metus, et commodo metus erat non mi. Cras ultricies diam varius,
-  leo eget, egestas enim. Suspendisse mattis ultrices pretium.
+<img src="images/thingSpeak.jpg" style="width:200px; margin-top:10px;"/>	
+<br>The sensor data is also sent to ThingSpeak services via POST request send by the Arduino. Here the data becomes visually represented with a graph. It displays the Lux level as well as the time it was posted. 
 </p>
 
-<h1 style="color: #0751FA; padding-top: 5px; padding-left: 15%;">Twitter</h1>
+<h1 style="color: #0751FA; padding-top: 5px; padding-left: 15%;">LEDs</h1>
 <p style=" padding-left: 13%; padding-right: 13%;">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut bibendum iaculis ante,
- a commodo ligula elementum eu. Mauris placerat lectus vitae ex aliquet tincidunt. Ut bibendum
- gravida dignissim. Ut eu facilisis orci. Etiam gravida porttitor lorem id varius. Duis semper,
- nunc at luctus rutrum, tellus tellus vehicula metus, et commodo metus erat non mi. Cras ultricies diam varius,
-  leo eget, egestas enim. Suspendisse mattis ultrices pretium.
+<img src="images/LED.jpg" style="width:200px; margin-top:10px;"/>	
+<br>Each of the four LEDs have a purpose:<br>
+	<ul>
+  <li>Green/Red: The red light will turn on when light levels are lower than 300 Lux, if they are greater than 300 the green LED will be on. </li>
+  <li>Blue: Remote controlled LED via Arduino webserver.</li>
+  <li>Yellow: Set to blink whenever XBee data reads analog sample from sensor circuit.</li>
+</ul>
+
 </p>
 
 
